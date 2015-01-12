@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Osnove informatike: HTML</title>
+		<meta name="description" content="Osnove Html in Css" />
+		<meta name="keywords" content="HTML, Html, CSS, Css, Osnove, Programiranje, FDV, Osnove informatike" />
+		<meta name="vid pajek arambasic" content="Html in Css" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script type="text/javascript" src="modernizer.js"> </script>
+
+<body>
+<div class="content">
+	<div class="naslovnica">
+	<header>
+		<h1>Osnove HTML</h1>
+	</header>
+	<div class="kazalo">
+		<h2>Kazalo vsebine:</h2>
+		<h2 class="prejsna_stran"><a href="index.html">Prejšnja stran</a></h2>
+	</div>
+		</div>
+				<ul class="ref group kazalo-naslovi">
+					<li><a href="#Kaj_je_HTML">1 Kaj je HTML?</a></li>
+					<li><a href="#Značke_v_HTML">2 Značke v html</a></li>
+					<li><a href="#Splošna_oblika_HTML">3 Splošna oblika HTML</a></li>
+					<li><a href="#Pisava">4 Pisava</a></li>
+					<li><a href="#Seznami">5 Seznami</a></li>
+					<li><a href="#Vstavljanje_elementov">6 Vstavljanje elementov</a></li>
+					<li><a href="#Kontaktni_podatki">7 Kontaktni podatki</a></li>
+					<li><a href="#Tabele">8 Tabele</a></li>
+					<li></li>
+				</ul>
+				
+</div>
+
+	<div id="ozadje">
+	<div class="glavn-content"> 
+	<a name="Kaj_je_HTML"><h2>Kaj je HTML?</h2></a>
+	<p>HTML (Hypertext Markup Language) je zaporedje ukazov, ki povejo kako naj se predstavitvena stran prikaže. Ukazi se imenujejo tudi značke (tags). Značke se vedno nahajajo med znakoma < in >, kot npr. <TAG>
+	Spletni pregledovalniki (browsers) so programi, ki berejo ukaze v jeziku HTML in glede na to prikazujejo vsebino. Vsako ročno oblikovanje strani (npr. večkratni presledki, prazne vrstice,...) se ignorira. Na primer, če odtipkamo </p>
+	<pre>Danes     je        
+						lepo
+	                              vreme.
+
+	</pre>
+	<p>V tem primeru bo prikazovalnik spletne strani izpisal: 
+	</br>Danes je lepo vreme. </p>
+
+	<p class="box">Datoteke v HTML imajo Datoteke v HTML imajo podaljšek .htm ali .html</p>
+	<a name="Značke_v_HTML"><h2>Značke v HTML</h2></a>
+	<p>Obstajata dve vrsti značk:</p>
+	<ul>
+		<li>Samostojne značke npr: <code>&ltlink&gt</code> Te se uporabljajo za naslavljanje elementov ter dokumentov.</li>
+		<li>začetne in končne značke npr: <code>&ltp&gt in &lt/p&gt</code> Te se uporabljajo za vnašanje konteksta. </li>
+	</ul>
+	<p> Samostojne značke ne rabijo zaključka, saj v njih ne vnašamo konteksta kot je tekst in podobno. Taki primeri so: nova vrstica, nov odstavek, naslavljanje dokumentov kot so CSS, JS... <br>Končna značka se od začetne značke loči le po dodatnem znaku / pred imenom značke. Vse kar se nahaja v notranjosti značke se podreja oblikovanju, ki ga zahteva značka. taki primeri so značke p, ul, h1, div a...</p>
+
+
+	<a name="Splošna_oblika_HTML"><h2>Splošna oblika HTML</h2></a>
+		<p> Opis predstavitvene strani v jeziku HTML je naslednji:</p>
+		<code><pre>
+		&lt!DOCTYPE html&gt
+		&ltHTML&gt
+		    &ltHEAD&gt
+		    "Glava predstavitvene strani"
+		      &ltmeta charset="UTF-8" /&gt
+		      &ltTITLE&gtNaslov, ki se pojavi v okviru okna&lt/TITLE&gt
+		      &ltlink rel="stylesheet" type="text/css" href="css.css" /&gt
+		    &lt/HEAD&gt
+		    &ltBODY&gt
+		    "Vsebina predstavitvene strani"
+		    &lt/BODY&gt
+	   	&lt/HTML&gt
+		</pre></code>
+		<h3>Obrazložitev:</h3>
+		<p><code>&lt!DOCTYPE html&gt</code> je začetna vrstica pri vsakem HTML dokumentu.Lahko se tudi izpisti saj ni kritična. Sporoči tistemu programu, ki bere besedilo, da je to HTML dokument.</p>
+		<p><code>&ltHTML&gt in &lt/HTML&gt</code> To sta znački za odpiranje in zapiranje dokumenta HTML. ta značka je obvezna, saj sporoča programu kje se dokument začne ter kje se konča.  </p>
+		<p><code>&ltHEAD&gt in  &lt/HEAD&gt </code> Sta odpiralni in zapiralni znački glave. V glavi se ponavadi nahajajo vsi podatki, ki niso kontekstualno povezani z HTML dokumentom, kot so povezave z drugimi dokumenti.</p>JS, CSS ipd...) ter drugi "meta" tagi oziroma značke. te sporočajo različne stvari v našem primeru sporoča "meta tag" način oziroma pisanja z šumniki (spletni brskalnik jih bo vključil) ostale "meta tage" se uporablja pretežno za optimizacijo pri spletnih iskalnikih. </p>
+		<p>več o "meta tagih" si preberi na naslednji povezavi: <a href="http://www.w3schools.com/tags/tag_meta.asp"> w3schools: Meta tags</a></p>
+
+	<a name="Pisava"><h2>Pisava v HTML:</h2></a>
+	<p>v tem predelu bomo obdelelai različne značke s katerimi definiramo pisavo v html. <br> za Vse značke ki se uporabljajo za pisavo glej naslednjo povezavo: </p>
+
+	<h3>Naslovi:</h3>
+		<p>naslove definiramo z značkami od &lth1&gt do  &lth6&gt dane značke potrebujejo poleg odpiralne tudi zapiralno značko </p>
+
+		<code>&lth1&gt Moj prvi naslov &lt/h1&gt <br></code>
+		<code>&lth2&gt Moj drugi naslov &lt/h2&gt</code>
+		<p>izpis:</p>
+		<h1> Moj prvi naslov (heding h1)</h1>
+		<h2> Moj drugi naslov (heding h2)</h2>
+		<p> Kot ste opazili se naslovi manjšajo (največji je h1 najmanjši pa h6).</p>
+
+		<h3> Odstavki:</h3>
+
+		<p>  značka <code>&ltp&gt</code> je najpogosteje uporabljena značka v Dokumentu HTML. definira enostaven odstavek z normalnim besedilom. </p>
+
+		<p><code> &ltp&gt</code> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque non sapiente quod rerum tenetur eaque aspernatur unde nam tempora animi officiis, autem, libero, vel ipsa pariatur. Eaque deserunt cumque culpa.<code> &lt/p&gt</code></p>
+		<p>Izpis:</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla a distinctio sit, laborum. Doloribus voluptates totam culpa maxime provident vel asperiores quod fugiat, ab! Cum consectetur dicta, laudantium eum?</p>
+
+		<h3> Ostale značke za izpis:</h3>
+		<p>Ostale značke niso tako pomembne vendar so pogosto v uporabi. vse naslednje značke so zaprtega tipa</p>
+		<ul>
+			<li><code>br</code> je značka ki prisili text da preide v novo vrstico</li>
+			<li><code>strong</code> značka za odebelitev teskta</li>
+			<li><code>i</code>značka za poševn text </li>
+			<li><code>em</code> značka za </li>
+			<li><code>small</code>značka za majhen text</li>
+			<li><code>mark</code>značka za označen text</li>
+			<li><code>del</code> značka za prečrtan text</li>
+			<li><code>sub</code>značka za podpisan text</li>
+			<li><code>super</code>značka za nadpisan text</li>
+		</ul>
+		<p>ostale značke za pisavo, njihov pomen ter uporabo si poglejte na <a href="http://www.w3schools.com/html/html_formatting.asp"> w3schools: HTML formating</a></p>
+	
+	<a name="Seznami"><h2>Seznami</h2></a>
+		<p>Seznami se v HTML uporabljajo za različne načine, nekateri so očitni kot so izpis seznama. S pomočjo CSS pa lahko sezname preoblikujemo v Navigacijske odseke strani, galerije in podobno... <br>
+		Poznamo 2 osnovna tipa seznamov <code>ul</code> <i>"unorderd list"</i> in <code>ol</code> <i>"orderd list."</i>
+		<code>li</code> <i>list item</i> pa je značka ki definira vsak posamezni element v seznamu.
+		<br>To je tudi gnezdena značka, saj je <code>li</code> vedno pod <code>ul</code> oz. element li je otrok elementa ul.</p>
+		<p> HTML koda:</p>
+		<pre> <code>
+	&ltul&gt
+		&ltli&gt mitja &lt/li&gt
+		&ltli&gt jure &lt/li&gt
+		&ltli&gt maša &lt/li&gt
+	&lt/ul&gt
+		</code></pre>
+		<p> Izpis:</p>
+		<ul>
+			<li>mitja</li>
+			<li>jure</li>
+			<li>maša</li>
+		</ul>
+
+	<a name="Vstavljanje_elementov"><h2>Vstavljenje elementov</h2></a>
+
+
+		<h3>Sidra:</h3>
+		<p>sidra <i>(ang:ancor)</i> je element v HTML, ki omogoča vnašanje drugih vsebin oziroma sidriranje v dokument html. Lahko se nanaša na spletno stran, dokument, datoteko, ali pa neko točko v samem HTML zapisu. <br>
+		element sidre zelo pogosto uporabljamo v HTML, služi kot osnoven element interaktivnosti med uporabnikom ter avtorjem.</p>
+		<p>sidra ima značko <code>a</code> <br>
+		primer take sidre je link oziroma povezava.</p>
+
+		<p>koda:</p>
+		<a href=""></a>
+		<code>&lta href="https://www.google.si/" &gt LINK &lt/a&gt </code>
+		<p>izpis <br>
+		<a href="https://www.google.si/">LINK</a></p>
+		<!-- vstavi sliko -->
+		<p>Obrazložitev: <br>
+		(href="") je okrajšana angleška beseda "hyperreferance" in pomeni pot do določenega elementa, katerega želimo povezati ali vsidrati v sidro. Nato sledi konec značke, besedilo sidre ter zaključna značka za sidro.</p>
+		<p> V "hyperreferance" lahko vključimo katerokoli spletno stran, ki je dostopna na internetu(v poti do dokumenta mora biti navedena celotna pot spletne strani.) Lahko pa tudi dodamo tiste dokumente, ki so dostopni na našem sistemu oziroma tiste, katere bomo kasneje poslali na strežnik. Zasidramo lahko dokumente, glasbo, ter ostale dokumente, pri tem pa moramo upoštevati da se bodo dokumenti ki smo jih zasidrali naložili na računalnik ter se ne bodo prikazali.</p>
+
+
+	 <h3>Določanje poti do elementa</h3>
+		 <p>Pot do elementov določamo v  <code> Href atributu</code>. pot lahko navedemo iz spletne strani ali lokalno oziroma na strežniku. <br>
+		 pot do spletne strani navedemo tako da v narekovajih vnesemo celoten naslov spletne strani primer: <code> href="https://www.google.si/"</code> <br>
+		 lokalno pot pa določimo tako da navedemo pot do določenega dokumenta. če je dokument v isti mapi kot HTML dokument, potem potrebujemo navesti samo polno ime dokumenta primer: <br>
+		 <code>href="img/smejko.png" </code>  </p>
+		 <p>Lahko tudi navedemo pot do datoteke ki je v določeni mapi, za mapo uporavbimo znak / <br>
+		 primer: <code>href="img/smejko.png"</code> br
+		 s tem povemo da se datoteka smejko.png nahaja v mapi img. <br>
+		 podobno se lahko pomikamo tudi iz osnovnega naslova, kjer se nahaja HTML to storimo z znakom ../</p>
+
+	 
+	
+	<h3>Prikaz slik</h3>
+		<p>Slike lahko prikažemo z img značko. ta značka se obnaša podobno kot sidra, kar pomeni da moramo tudi tu vnesti pot do te slike. <br>
+		Pomembno je da v src atribut ustavimo pravo pot do slike ter pravo končnico slike ( v tem primeru je to png) <br>
+		Atribut <code>src</code> se obnaša podobno kot atribut <code>href</code>. <br>
+		Atribut alt  <i> (Alternative)</i> pomeni alternativen opis dane slike. ta pride v poštev ko brskalnik ne mora dostopati do slike, saj se v tem primeru izpise teskst "slika smejkota", dani atribut ima tudi možnost pomoči obrazložitve slike spletnim brskalnikom ter daje pomoč osebami z posebnimi potrebami. <br>
+		Obstajajo tudi drugi atributi za značko img glej <a href="http://www.w3schools.com/tags/tag_img.asp"> W3 Schools: značka img</a></p>
+		
+		<code>&ltimg href="img/smejko.png alt="slika smejkota" &gt smejko &lt/img&gt</code>
+		<p>izpis: <br>
+		<img src="img/smejko.png" alt="slika smejkota" width="200px height="200px" "> Slika smejkota</p>
+
+
+
+	<a name="Kontaktni_podatki"><h2>Naslavljanje kontaktnih podatkov</h2></a>
+	<p>V jeziku HTML obstajajo različni načini predstavitve kontaktnih podatkov. Pogledali si bomo le dva najosnovnejša primera, to sta Naslavljanje e-pošte ter telefonske številke.</p>
+	<h4>Naslavljanje e-pošte:</h4>
+	<p>To storimo tako, da v sidri nastavimo atribut <i>href</i> v posebni obliki <br>
+	primer:</p>
+	<code>&lta href="mailto:example@gmail.com" &gt e-mail &lt/a&gt </code>
+	<p>Rezultat:</p>
+	<a href="mailto:example@gmail.com"> e-mail</a>
+	<p>Klik na dani primer bo sprožil vas primarni program za posiljanje e-poste.</p>
+	<h4>Naslavljanje telefonske številke</h4>
+	<p>To storimo zelo podobno kot pri naslavljanju e-pošte. tudi pri tem primeru moramo slediti pravilom v <i>href</i> atriutu.</p>
+	<code>&lta href="tel:031456789" &gt Tel:031456789&lt/a&gt </code>
+	<p>Prikaz:</p>
+	<a href="tel:031456789">Tel:031456789</a>
+	<p> Tudi v tem primeru bo nas spletni brskalnih poskusil pognati našo primarno aplikacijo za klicanje. Ta oblika je zelo primerna za mobilne uporabnike, za uporabnike namiznih računalnikov pa je priporočljivo napisati tudi telefonsko številko kot tekst v značko <i>a.</i> saj ti ponavadi nimajo nastavljenega takšnega programa.</p>
+
+
+	<a name="Tabele"><h2> Tabele v HTML</h2></a>
+	<p>Včasih so tabele bile močno za postavitev podatkov na spletni strani, vendar je ta uporaba zastarela. Danes je uporaba tabel namenjena predvsem njihovem prvotnem namenu. Oblika zapia tabel je podobna obliki zapisa seznama.</p>.
+
+	za razumevanje tabel so pomembne naslednje značke
+	<ul>
+		<li> <code>table</code> značka označuje konec in začetek tabele</li>
+		<li><code>tr</code> (table row) označuje začetek in konec stolpca tabele</li>
+		<li><code>td</code> (table data) označuje začetek in konec podatkov v tabeli</li>
+		<li> <code>th</code> (table heading) označuje glavo tabele, uporabljamo jo za označevanje delov stolpca</li>
+	</ul>
+	<pre> <code>
+	&lttable&gt
+		&lttr&gt
+		    &lttd&gtMarko&lt/td&gt
+		    &lttd&gtLepi&lt/td&gt 
+		    &lttd&gt50&lt/td&gt
+		 &lt/tr&gt
+		 &lttr&gt
+		    &lttd&gtEva&lt/td&gt
+		    &lttd&gtJankovic&lt/td&gt 
+		    &lttd&gt94&lt/td&gt
+		 &lt/tr&gt
+		 &lttr&gt
+		   &lttd&gtJure&lt/td&gt
+		   &lttd&gtMatkovič&lt/td&gt
+		   &lttd&gt20&lt/td&gt
+		 &lt/tr&gt
+	&lt/table&gt
+		</code></pre>
+	<p>Rezutat:</p>
+	<table border="1" style="width:50%">
+  <tr>
+    <td>Marko</td>
+    <td>Lepi</td> 
+    <td>50</td>
+  
+  <tr>
+    <td>Eva</td>
+    <td>Jankovic</td> 
+    <td>94</td>
+  
+  <tr>
+  	<td>Jure</td>
+  	<td>Matkovič</td>
+  	<td>20</td>
+  
+	</table>
+	<p>to je le osnovna postavitev tabel. več infomrmacij o tabelah dobite na naslednji povezavi: <a href="http://www.w3schools.com/html/html_tables.asp"> W3 Schools: Tables.</a></p>
+
+
+
+	</div>
+</div>
+<footer>
+	<p>Osnove informatike | Vid Pajek Arambašić| FDV 2014/2015</p>
+</footer>
+</body>
+</html>

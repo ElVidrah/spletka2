@@ -1,0 +1,449 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #f1f1f1;
+	color: #333;
+	font-size: 1em;
+	font-weight: 400;
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #293d55;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #333;
+}
+
+.content {
+	padding:0;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+/* Header */
+.codrops-header {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	z-index: 1000;
+	font-size: 1.5em;
+}
+
+.codrops-header h1 {
+	position: absolute;
+	font-weight: 600;
+	font-size: 4em;
+	line-height: 1.2;
+	color: #fff;
+	z-index: 1000;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	width: 100%;
+	top: 40%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+.codrops-header p{
+	color: white;
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 35%;
+}
+
+.codrops-header h1 a {
+	color: #eff62b;
+}
+
+.codrops-header h1 a:hover,
+.codrops-header h1 a:focus {
+	color: #fff;
+}
+
+.codrops-header h1 span::before,
+.codrops-header h1 span::after {
+	content: ' ― ';
+	font-weight: 200;
+}
+
+.codrops-header h1 i {
+	display: block;
+	font-size: 15%;
+	max-width: 40%;
+	margin: 0 auto;
+	line-height: 2;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	font-weight: 500;
+	font-size: 0.69em;
+	line-height: 2.2;
+	padding: 1em 0;
+	position: absolute;
+	z-index: 100;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.codrops-top a {
+	color: #fff;
+	display: inline-block;
+	padding: 1em 2em;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Codrops demo links */
+.codrops-demos {
+	padding: 2em 0;
+}
+
+.codrops-demos a {
+	font-weight: 700;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+	margin: 0 1.5em;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+.codrops-demos a:hover{
+	transition:all 0.3s;
+	border-bottom: solid;
+}
+.ref{
+	width:100%;
+}
+
+ul.ref {
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+
+ul.ref li {
+	padding: 0.85em 0;
+	text-align: left;
+	display: inline-block;
+	width:30%;
+
+}
+ul.ref li a{
+	padding: 0.7em;
+}
+
+ul.ref li a:hover{
+	transition:all 0.3s ease;
+	color: black;
+	font-weight: bold;
+	
+}
+
+.html_content{
+	max-width: 700px;
+	margin: auto;
+}
+.html_content p{
+	text-align: left;
+
+}
+.html_content ul li{
+	text-align: left;
+}
+
+/*OSNOVE CSS*/
+
+#ozadje{
+	background-image: url("../img/lined_paper1.png");
+
+}
+
+
+.navigacija{
+	border-bottom: solid;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.kazalo{
+	text-align: left;
+	margin: 1em;
+
+}
+
+.naslovnica{
+	background: #356c5e; /* Old browsers */
+	background: -moz-linear-gradient(280deg,  #356c5e 0%, #4f356c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#356c5e), color-stop(100%,#4f356c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* IE10+ */
+	background: linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356c5e', endColorstr='#4f356c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	min-height: 2em;
+	color:#f1f1f1;
+	margin-top: -65px;
+	padding: 0, 1em;
+	padding-bottom: 1px;
+	
+	width: 100%
+
+}
+header h1{
+	font-size: 3em;
+	padding-top: 1em;
+}
+.kazalo-naslovi{
+	border-bottom: solid;
+	border-bottom-color: #3d4955;
+}
+.glavn-content{
+	margin: auto;
+	max-width: 700px;
+	
+}
+.glavn-content p{;
+	word-spacing: 2px;
+	padding: 10px;
+	line-height: 1.4em;
+}
+.glavn-content h1,
+.glavn-content h2,
+.glavn-content h3,
+.glavn-content h4{
+	font-family: sans-serif;
+}
+.glavn-content code{
+	color: black;
+	padding: 1px;
+}
+.glavn-content a{
+	color:#1134D9;
+}
+.glavn-content a:hover{
+	transition:all 0.5s ease-in;
+	color: #800000;
+	
+
+}
+footer{
+	background-color: #3d4955;
+	height: 80px;
+	color: #999999;
+	
+}
+footer p {
+	padding: 2em;	
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 0.85em;
+}
+.box{
+	border-bottom: solid;
+	border-top: solid;
+	border-color: #272822;
+	border-width: 0.1em;
+}
+/*CSS STYLIG PAGE STARTS HERE*/
+.glava{
+	width: 100%;
+	background: #356c5e; /* Old browsers */
+	background: -moz-linear-gradient(280deg,  #356c5e 0%, #4f356c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#356c5e), color-stop(100%,#4f356c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* IE10+ */
+	background: linear-gradient(280deg,  #356c5e 0%,#4f356c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356c5e', endColorstr='#4f356c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.css_kazalo{
+	width: 100%;
+	padding-bottom: 20px;
+
+}
+.kazalo h2{
+	color: white;
+}
+.prejsna_stran{
+	display: inline-block;
+	margin-top: -50px;
+	position: relative;
+	margin-left: 80%;
+}
+.prejsna_stran a{
+	color: white;
+}
+.css_kazalo li{
+	list-style: none;
+	display: inline-block;
+	width: 30%;
+	height: 20px;
+	padding: 10px;
+	color: white;
+}
+.css_kazalo li a {
+	color: white;
+}
+.css_kazalo li a:hover{
+	transition:all 0.2s ease-in;
+	color: lime;
+	}
+.povezave p{
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+.povezave ul li a{
+	color:white;
+}
+.povezave ul li a:hover{
+	transition:all 0.2s ease-in;
+	color: tomato;
+
+}
+.Vsebina-Css{
+	text-align: justify;
+	margin: auto;
+	max-width: 800px;
+	padding:10px;
+}
+.Vsebina-Css h2{
+	font-family: sans-serif;
+	color: #408080;
+	font-size: 2em;
+}
+.Vsebina-Css h3{
+	font-size: 1.5em;
+	color: #72B8B8;
+}
+.Vsebina-Css p,
+.Vsebina-Css li{
+	line-height: 1.7;
+}
+.Vsebina-Css img{
+	border-radius: 5%;
+	background-position: center;
+	max-width: 100%;
+}
+.Vsebina-Css a{
+	color:#1134D9;
+	font-weight: bold;
+}
+.Vsebina-Css a:hover{
+	transition:all 0.5s ease-in;
+	color: #800000;
+}
+.koda{
+	display: inline-block;
+	background-color: gray;
+	padding: 5px;
+	border-radius: 10px;
+	white-space: pre-line;
+	color: white;
+
+}
+.koda p{
+	white-space: pre-line;
+	color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 60em) {
+	.codrops-header h1 {
+		font-size: 7em;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.wrap {
+		height: 80vh !important;
+		background: #3d4955;
+	}
+	.codrops-header {
+		top: 100%;
+	}
+	.codrops-header h1 {
+		padding-top: 5em;
+	}
+	.codrops-header h1 i {
+		font-size: 42%;
+		max-width: 90%;
+	}
+	.codrops-icon {
+		font-size: 1.5em;
+	}
+	.codrops-icon span {
+		display: none;
+	}
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1280px"
+	 height="720px" viewBox="0 0 1280 720" enable-background="new 0 0 1280 720" xml:space="preserve">
+<g id="Layer_1">
+	<rect x="276.5" y="152" fill="#319966" stroke="#2E374D" stroke-width="41" stroke-miterlimit="10" width="727" height="416"/>
+	<g>
+		<g>
+			<polyline fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" points="
+				876.592,494.881 876.592,495.381 876.092,495.381 			"/>
+			
+				<line fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1.0004,10.0039" x1="866.088" y1="495.381" x2="408.911" y2="495.381"/>
+			<polyline fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" points="
+				403.909,495.381 403.409,495.381 403.409,494.881 			"/>
+			
+				<line fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0.9845,9.8453" x1="403.409" y1="485.035" x2="403.409" y2="230.042"/>
+			<polyline fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" points="
+				403.409,225.119 403.409,224.619 403.909,224.619 			"/>
+			
+				<line fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1.0004,10.0039" x1="413.913" y1="224.619" x2="871.09" y2="224.619"/>
+			<polyline fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" points="
+				876.092,224.619 876.592,224.619 876.592,225.119 			"/>
+			
+				<line fill="none" stroke="#CCDB2A" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0.9845,9.8453" x1="876.592" y1="234.964" x2="876.592" y2="489.958"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="
+				1111.451,624.771 1111.451,629.771 1106.451,629.771 			"/>
+			
+				<line fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.1402,20.2805" x1="1086.171" y1="629.771" x2="183.689" y2="629.771"/>
+			<polyline fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="
+				173.549,629.771 168.549,629.771 168.549,624.771 			"/>
+			
+				<line fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9.9914,19.9828" x1="168.549" y1="604.789" x2="168.549" y2="105.22"/>
+			<polyline fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="
+				168.549,95.229 168.549,90.229 173.549,90.229 			"/>
+			
+				<line fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10.1402,20.2805" x1="193.829" y1="90.229" x2="1096.311" y2="90.229"/>
+			<polyline fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" points="
+				1106.451,90.229 1111.451,90.229 1111.451,95.229 			"/>
+			
+				<line fill="none" stroke="#9A4D74" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9.9914,19.9828" x1="1111.451" y1="115.211" x2="1111.451" y2="614.78"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<text transform="matrix(1 0 0 1 539.7773 376.5771)" opacity="0.7" font-family="'AvenirNextLTPro-Demi'" font-size="54">Content</text>
+	<text transform="matrix(1 0 0 1 549 207)" opacity="0.7" font-family="'AvenirNextLTPro-Demi'" font-size="43">Padding</text>
+	
+		<text transform="matrix(1 0 0 1 582.8506 162)" opacity="0.9" fill="#ED1F24" font-family="'AvenirNextLTPro-Demi'" font-size="36">Border</text>
+	
+		<text transform="matrix(1 0 0 1 553.6372 122.0703)" opacity="0.9" fill="#333333" font-family="'AvenirNextLTPro-Demi'" font-size="52.3738">Margin</text>
+	
+		<text transform="matrix(1 0 0 1 567.7251 693)" opacity="0.9" fill="#319966" font-family="'AvenirNextLTPro-Demi'" font-size="52.3738">Down</text>
+	<text transform="matrix(1 0 0 1 18 378)" opacity="0.9" fill="#319966" font-family="'AvenirNextLTPro-Demi'" font-size="52.3738">Left</text>
+	
+		<text transform="matrix(1 0 0 1 1134 378)" opacity="0.9" fill="#319966" font-family="'AvenirNextLTPro-Demi'" font-size="52.3738">Right</text>
+	
+		<text transform="matrix(1 0 0 1 604.7266 54)" opacity="0.9" fill="#319966" font-family="'AvenirNextLTPro-Demi'" font-size="52.3738">Up</text>
+</g>
+</svg>

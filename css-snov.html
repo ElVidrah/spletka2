@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Css-snov</title>
+	<meta name="description" content="Osnove informatike: osnoce CSS in HTML" />
+	<meta name="keywords" content="HTML, Html, CSS, Css, Osnove, Programiranje, FDV, Osnove informatike" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<script type="text/javascript" src="modernizer.js"></script>
+	
+	
+
+</head>
+<body>
+<div class="content">
+<div class="glava">
+	<div class="naslovnica">
+		<header>
+			<h1>Osnove Css</h1>
+		</header>
+	</div>
+
+	<div class="kazalo">
+	<ol class="ref group kazalo-naslovi">
+		
+	</ol>
+	
+	<div class="kazalo">
+		<h2>Kazalo vsebine:</h2>
+		<h2 class="prejsna_stran"><a href="index.html">Prejšnja stran</a></h2>
+	</div>
+		</div>
+		<ul class="css_kazalo">
+			<li><a href="#Osnovni_koncepti">Osnovni koncepti</a></li>
+			<li><a href="#Sestava_CSS">Sestava CSS</a></li>
+			<li><a href="#Dodajanje_CSS">Dodajanje CSS</a></li>
+			<li><a href="#CSS_selektorji">CSS selektorji</a></li>
+			<li><a href="#Vrednosti_in_enote">Vrednosti in enote</a></li>
+			<li><a href="#Pisava">Pisava</a></li>
+			<li><a href="#Box_model_concept">Box model Concept</a></li>
+			<li><a href="#Oblikovanje">Oblikovanje</a></li>
+			<li><a href="#Tehnike_pozicioniranja">Tehnike pozicioniranja</a></li>
+		</ul>
+		<div class="css_kazalo povezave">
+			<p>Nekaj koristnih povezav, ki bolj natančno obdelajo snov.</p>
+			<ul>
+				<li><a href="http://teamtreehouse.com/home">Spletna učilnica Treehouse</a></li>
+				<li><a href="http://www.lynda.com/">Spletna učilnica Lynda</a></li>
+				<li><a href="http://www.w3.org/Style/CSS/">W3C kontorcij</a></li>
+				<li><a href="http://www.w3schools.com/">W3 Schools</a></li>
+				<li><a href="http://css-tricks.com/almanac/">Seznam Css Lastnosti</a></li>
+				<li></li>
+			</ul>
+		</div>
+		</div>
+		
+	<div class="Vsebina-Css">
+		<a name="Osnovni_koncepti"><h2>Osnovni koncepti</h2></a>
+		<p>Css oziroma Cascading style sheet je spletni programski jezik, namenjen urejanju vsebine dokumenta HTML. <br>
+		Kaskadiranje določa red upoštevanja določenih pravil na HTML datoteko. Css bo pripisal tista pravila, ki se poravljajo zadnja za določeno značko.</p>
+		<h3>Pomembnost</h3>
+		<p>Pomembnost se nanaša na izvor CSS datoteke, ta lahko izvira iz več virov. Vsak spletni brskalnik ima svoj "brskalniški CSS" z svojimi osnovnimi pravili, nato sledi uporabniški CSS, ta "povozi" prejšnjega pri pravilih, ki se ponavljajo. Uporabniški css določi avtor dane spletne strani. ta Css določa obliko dane spletne strani.</p>
+		<h3>Osnovni red</h3>
+		<p>Ta lasnost Css-a Določa pomembnost tistim datotekam, ki se pojavljajo kasneje v HTML zapisu. V HTML zapisu je možno navesti več CSS datotek. Ponavljajoča pravila se bodo tako upoštevala pri zadnji navedeni CSS datoteki.</p>
+		<h3>Specifičnost</h3>
+		<p>To pravilo določa katera pravila v CSS zapisu se bodo vpoštevala ter katera ne. to pravilo narekuje, da se pri ponavljajočih se pravilih vpoštevajo tista, ki se pojavljajo kasneje v CSS datoteki.</p>
+		<h3>CSS dedovanje</h3>
+		<p>Pri tem pravilu moramo razumeti osnovno sestavo HTML dokumenta. Različna CSS pravila se uveljavljajo na različne CSS elemente, če se lahko. temu pravimo dedovanje, primer: če določimo pravilo belega ozadja pri selektorju body, bodo imeli vsi elementi v HTML, ki so pod elementom body belo ozadje, če pri kakšnem od podelementov to pravilo ni popravljeno ali "povoženo."
+		</p>
+		<a name="Sestava_CSS"><h2>Sestava CSS</h2></a>
+		<p>Css je sestavljen iz dveh delov, selektorja in deklaracije primer:</p>
+		<div class="koda">
+			h1{font-size:2.5em;}
+		</div>
+		<p>H1 je v tem primeru selektor. Znotraj zavitih oklepajev je deklaracija (lahko jih je več.) <br> Deklaracija sestoji iz imena pravila (vse kar je pred (:) ter vrednosti (kar je za :). Na koncu vsake deklaracije je podpičje.</p>
+		<p>Selektorji so deli Kode v Css s katerimi naslavljamo elemente v HTML <br>
+		Deklaracija pa je unikatna CSS koda, ta določa pravila ki apelirajo na določene selektorje.</p>
+		<a name="Dodajanje_CSS"><h2>Dodajanje CSS na Določeno stran</h2></a>
+		<p>Css lahko dodamo na 3 različne načine <br>
+		Prvi in najpogostejši je dodajanje posebne css datoteke, ki jo nato povežemo v datoteki HTML. CSS dodamo tako, da naredimo novo datoteko z končnico .css .To prazno datoteko moramo nasloviti tudi v HTML, to storimo ponavadi v Head znački z značko Link</p>
+		<div class="koda">
+			&ltlink rel="stylesheet" type="text/css" href="css/nekaj.css" &gt
+		</div>
+		<ul>
+			<li>rel: je potreben, specificira razmirje med dano datoteko in povezanim dokumentom</li>
+			<li>type: določi v kakšnem tipu je povezan dokument</li>
+			<li>href (hyper referance):Specificera pot do povezanega dokumenta. Pri povezovanju se lahko pomikamo v mapo z / ter izven mape z ../ osnovno izhodišče je lokacija našega HTML dokumenta. </li>
+		</ul>
+		<p>Drugi način je dodajanje CSS lastnostni v datoteki HTML; v posebni style znački. ta se po navadi nagaja v glavi <br> 
+		primer:</p>
+		<div class="koda">
+		<p>&lthead&gt
+		    &ltstyle type="text/css"&gt
+		    	h1{
+		    	color:red;
+		    	}
+	   	&lt/head&gt
+	   	<p>
+		</div>
+		<a name="CSS_selektorji"><h2>CSS selektorji</h2></a>
+		<p>Ko definiramo selektor v CSS dajemo ukaz HTML datoteki naj doda dana pravila k temu selektorju. Poznamo več načinov kako lahko definiramo selektorje, ter kako z selektorji naslavljamo željene elemente v HTML</p>
+		<h3>Univerzalni selektor</h3>
+		<p>Ta selektor izbere vse elemente najdene v HTML datoteki ta selektor zapisemo z *. Ker njegova pravila veljajo na vseh HTML elementih, se temu selektorju večinoma izogibamo.</p>
+		<h3>Klasični selektor</h3>
+		<p>Ta izbere vse istoimenske elemente v HTML datoteki.</p>
+		<img src="img/osnova.PNG" alt="">
+		<p>Lahko tudi izberemo več elementov hkrati, pri tem moramo selektorje ločiti z vejico.</p>
+		<p>Vgnezdene elemente v HTML dostopamo z vgnezdenimi selektorji. Primer takih elementov je na primer seznam ,tabela ipd... do vgnezdenih elementov dostopamo tako da najprej navedemo nadelement, dodamo presledek ter navedemo željen element.</p>
+		<h3>ID in Class</h3>
+		<p><b>ID</b> je identifikator določenega elementa ter pripada le njemu. z tem identifikatorjem dostopamo le do enega posameznega elementa v HTML datoteki. v CSS ga zapišemo z # pred posameznim imenom identifikatorja. v html sintaksi pa v odpiralno značko vpišemo id="". <br> 
+		primer: <br>
+		<code>&lt/p id="primer"&gt</code></p>
+		<p><b>Class</b> <br>
+		Class je podoben identifikatorju, vendar za razliko od ID lahko z classom ciljamo na vgnezdene oz podelemente določenega elementa. tako nismo omejeni na točno določen element. Uporabljanje Class tehnike naslavljanja elementov je najpogostejša. v CSS ga naslavljamo tako, da dodamo piko pred imenom classa, v html pa podobmo kot ID vendar da namesto ID pišemo Class.</p>
+		<h3>Stanja selektorjev ter preostale tehnike</h3>
+		<p>Elementi v HTML datoteki se lahko nahajajo v več stanjih do katere lahko dostopamo prek selektorjev. Obravnavali bomo tri stanja, ki so bila strukturirana za povezavne elemente (a) , vendar jih lahko apliceramo tudi na nekatire druge elemente.</p>
+		<p>Stanja nastopijo z interakcijo z miško, ko pritisnemo na določen element, ko ga prekrijemo z miško ter ko je bil ta element "že" obiskan/kliknjen. do teh stanj v Css dostopamo z dvopičjem, ter besedami visited, hover, active <br>Primer:</p>
+		<img src="img/hoverstates.PNG" alt="">
+		<a name="Vrednosti_in_enote"><h2>Vrednosti in enote</h2></a>
+		<p>Vsaka Css lastnost ima svojo enoto, bodisi ozadnje nekega okvira, naslov slike za ozadje ali pa same dolžine. ko definiramo numerično vrednost moremo skoraj vedno specificirati določeno enoto meritve (izjema so ničle). Brez določenih enot spletni brskalniki ne vedo kaj smo mislili s tem ko smo vnseli neko vrednost. Vsak selektor ima set pravil katere mu lahko pripišemo ali pa prilagodimo, ter vsako pravilo ima set vrednosti in enot ki mu jih lahko določimo.</p>
+		<h2>Merske vrednosti</h2>
+		<p>Delijo se na absolutne in relativne.</p> <br>
+		<b>Določanje dolžine: Absoliutne merske enote</b>
+		<p>Absolutne merske enote so vnaprej določene, fiksne ter se ne spreminjajo. Slednje so uporabne samo takrat ko vemo velikost medija na katerem bodo prikazane, ali pa nam pravilo ne dopušča uporabo relativnih.</p>
+		<p>Css sprejme naslednje merske enote:</p>
+		<ul>
+			<li>Piksli px</li>
+			<li>Milimetri mm</li>
+			<li>Centimetri cm</li>
+			<li>Inči in</li>
+			<li>Pike pc</li>
+			<li>Točke pt</li>
+		</ul>
+		<a href="values and units/absolute-length-units/final/absolute-units.html">Absolute lenght units</a>
+		<!-- primer absolutnih enot. dej magar link do fajlov. -->
+		<br>
+		<b>Določanje dolžine: Relativne merske enote.</b>
+		<p>Relativne merske enote določajo enoto, vendar je ta vezana na drugo enoto na primer dolžino ekrana, okvirja ki smo ga sami določili, velikost teksta ipd... <br>
+		Primerne so ko nevemo velikost medija na katerem bodo prikazane.</p>
+		<ul>
+			<li>Ex: je enota ki se obnaša glede na velikost male črke x pri osnovni velikosti danega fonta. Enota je relativna na predhodnje določeno velikost fonta.</li>
+			<li>Em: podobna kot Ex vendar je ta enota relativna na velikost fonta pri dani velikosti ekrana. (1 em je tako velikost fonta, ki ga ima tekst če velikost ne spreminjamo predhodno (to je ponavadi 16px). Težave tem se pojavljajo ko predhodno spreminjamo velikost teksta.</li>
+			<li>Rem (root em): vedno predstavlja osnovno velikost teksta v HTML elementu. Z tem se izognjemo težavam.</li>
+			<li>VW (viewport width): je odvisna od širine spletnega brskalnika. 1VW= 1/100 širine brskalnika.</li>
+			<li>VH (viewport height): Podobno kot VW vendar je ta enota relativna glede na višino brskalnika.</li>
+			<li>vmin (viewport minimum): je minimalna enota tako višine kot dolžine brskalnika. Mere ostanejo relativne do določene točke.</li>
+			<li>% (procenti): So najpogostejša oblika relativnih mer.</li>
+			
+		</ul>
+		<a name="Pisava"><h2>Urejanje pisave</h2></a>
+		<p>Pisava ima velikanski efekt pri dojemanju določene spletne strani. Css ima tako veliko možnosti za uravnavanje le te.</p>
+		<ul>
+			<li>Font Family: določa pisavo. Lahko uporabimo pisavo ki je podprza z strani spletnega brskalnika, ali pa jo vnesemo sami prek html in css. v Font family lahko navedemo več pisav hkrati, ločimo jih z vejico. Css bo izbral prvega, ki je podprt, ostale pisave tako določimo za rezervne. Več o fontih <a href="http://www.w3.org/Style/Examples/007/fonts.en.html">Dodajanje in urejanje pisave.</a></li>
+			<li>Font Weight: Je teža določene pisave oz. debelina. Po navadi nastavimo to na normal/bold lahko pa navedemo vrednosti od 100 do 900 če so te podprte z strani posamezne pisave.</li>
+			<li>Font size: določa velikost pisave (vrednost sprejme vse absolutne enote in em ter rem)</li>
+			<li>Color: Določa barvo pisave. Barvo lahko določimo z besedo, Hsl, Hsla, Rgb, Rgba, in hex kodiranjem.</li>
+		</ul>
+		<h3>Specificiranje barve</h3>
+		<ul>
+			<li>Hex kodiranje[#FFFFFF od 0 do f] To je heksadecimalno kodiranje.#RRGGBB (red green blue)</li>
+			<li>Rgb Kodiranje [255,255,255] (red, green, blue) od 0 do 255 primer: rgb(100,100,100)  </li> 
+			<li>Hsl kodiranje [255,255,255] (hue, saturatuon, lightness)</li>
+			<li>Besedno kodiranje: barve lahko specificiramo z tudi z besedami 	<a href="http://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">Tu si lahko ogledate imena vseh.</a></li>
+		</ul>
+		<p>Pri Hsl in Rgb poznamo še rezširitev, ki doda kanal za transparentnost (Hsla in Rgba) ta kanal se nahaja na intervalu od 1-0 (1=polna transparentnost, 0=ničelna transparentnost)</p>
+		<h2>Urejanje teksta</h2>
+		<ul>
+			<li>Line Hight [normal,px, brezenotno,em,%]: Vertikalni prostor med linijami teksta </li>
+			<li>Text align [Left, right,center, justify]: Določa poravnavo teksta</li>
+			<li>Text decoration [none, underline, overline, line-trough]: Dekoriranje teksta</li>
+			<li>Text indent [Vse enote za dolžino (tudi negativne)]:Urejanje prve vrstice teksta (horizontalni pomik)</li>	
+			<li>Text Transform [uppercase, lowercase,capitalize]:Nastavitve črk teksta</li>
+			<li>White space [nowrap, normal, pre, pre-line,pre-wrap]: Določa praznino med črkami v tekstu</li>
+			<li>Text shadow [px [horizontal offset, vertical offset, blur, color]]:omogoča senčenje teksta.</li>
+			<li>owerflow [hidemn, visible, scrool, auto, inherit]:Je nastavitev ki določi kaj se zgodi s tekstom ko se ta "izlije" iz svojega okvira, če je ta premajhen.</li>
+		</ul>
+		<a name="Box_model_concept"><h2>Css box model concept</h2></a>
+		<p>Vsak HTML element (ne glede na to kako je velik ali majhen) je lahko zamišljen kot okvir ki sestoji iz vsebine, robov, paddinga, in margina. to je eden najbolj pomembnih konceptov v CSS.</p>
+		<img id="box_model" src="img/box model.svg" alt="slika koncepta Css box model">
+		<p>Box model se aplicira na vse elemente. Elementi so tako naravno prikazani kot block ali pa inline elementi. <br>
+		Block element zavzame celotno širino svojega nadrejenega elementa. primeri takih elementov so p, h1, div...</p>
+		<p>Inline elementi pa zavzamejo le širino, ki jo potrebuje. primeri so: a,span, img...</p>
+		<p>Ta škatlasti model se sestavljen iz štirih elementov: vsebine, paddinga, borderja ter margina. Pod vsebino spada vsa vsebina ki je navedena v html dokumentu. Nato sledi Padding ta skuži kot prostor izven vsebine, vendar še vedno ohrani nekatira lastnosti dane vsebine. Rob ali border je zunanja sestavina nekega elementa. po navadi je neviden vendar ga lahko urejamo. Nazadnje je margin, ta služi za določanje prostora izven elementov.</p>
+		<!-- Chrome web tool metrics -->
+		<a name="Oblikovanje"><h2>Oblikovanje</h2></a>
+		<h3>Robovi</h3>
+		<ul>
+			<li>Border width [absolutne in relativne merske enote]: Širina robova</li>
+			<li>Border style [none, dashed, solid, dotted]: je oblika robovov, lahko specificiramo vsako stran posebaj.</li>
+			<li>Border color [barve]:Specificiramo barvo robova.</li>
+		</ul>
+		<h3>Širina, višina in overflow</h3>
+		<ul>
+			<li>Display [none, block,inline-block,inline]: Določa kako se bo element prikazoval</li>
+			<li>Visibility [hiden,visible]: Nastavitev ki določa ali je element viden (še vedno ostane)</li>
+			<li> <b>width</b> [širina]: določi širino elementa <b>Samo za block in inline block elemente!</b> </li>
+			<li>height [višina]:določa višino elementa.</li>
+			<li>Box sizing [border-box]:spremeni način računanja celotne višine in širine posameznih elementov, saj všteje padding in border v width / height</li>
+
+		</ul>
+		<h3>Ozadje</h3>
+		<p>S CSS-om lahko vsakemu elemtu priredimo svojo barvo ali sliko. določene vrednosti pa spremenijo kako se te slike/barve prikazujejo. V elementu je vse razen Margina tretirano kot ozadje.</p>
+		<ul>
+			<li>Background color [barve]: Nastavimo barvo ozadja</li>
+			<li>Background immage [url slike]: nastavimo sliko ozadja; če se slika ne more naložiti bo spletni brskalnik prikazal transparentno ozadje oziroma tistega, ki smo ga nastavili.</li>
+			<li>Background repeat [repeat-x, repeat-y, no-repeat]: določa ponavljanje ozadja če je ozadje premajhno za svoj okvir.</li>
+			<li>Background position [left, right, up, down, lenght units]:določi pozicijo ozadja.</li>
+		</ul>
+		<p>Slike se v CSS strukturi uporabljajo samo če služi zgolj esteckim namenom, če slika služi kakršnikolim vsebinskim namenom jo navedemo v HTML.</p>
+		<p>Ker se lahko ozadja ponavljajo, lahko to uporabimo za vzorec. Primere takšnih najdemo na <a href="http://subtlepatterns.com/"> Sledeči spletni strani.</a></p>
+		<h3>Okviri</h3>
+		<ul>
+			<li>Border radius[px,%]:Določa radij zaobljenosti okvira.</li>
+			<li>Border radius je okrajšava za border-top-left-radius, border-top-right-radius ipd...</li>
+			<li>Več o okvirih na <a href="http://css-tricks.com/almanac/properties/b/border-radius/">tej povezavi.</a></li>
+		</ul>
+		
+		<h3>Senčenje elementov</h3>
+		<p>Elemente senčimo z Box-shadow lastnostjo <br>
+		Zunanje senčenje:</p>
+		<p>Box shadow:[horizontal offset] [vertical offset] [optinal blur radius] [optional spread radius] [color]; enote so lahko pozitivne in negativne.</p>
+		<p>Notranje senčenje</p>
+		<p>box-shadow:inset 0 0 10px #000000; pred vrednostmi dodamo inset. <br>
+		Kombiniramo lahko več Senčenj</p>
+		<h3>Linarni in Radialni Gradienti</h3>
+		<p>Css podpira linearne in radialne gradiente, to so prehodi barv. barve lahpo prehajajo v transparentnost, ali pa v druge barve. barv je lahko več. Ker je ta sintaksta kompleksna ponavadi uporabljamo kar <a href="http://www.colorzilla.com/gradient-editor/"> spletni generator gradientov.</a></p>
+
+		<!-- omeni tranzicije transformacije ter media query. -->
+		<a name="Tehnike_pozicioniranja"><h2>CSS tehnike pozicioniranja elementov</h2></a>
+		<h3>Block elemtni in inline elementi</h3>
+		<p>Spletni brskalnik tretira vsak element na spletni strani kot block ali inline block element. če ga tretira kot block pomeni da ta element zavzame celotno širino sovjega okvira. Inline elementi pa zavzamejo samo tisto širino, ki jo potrebujejo, tako jim ne moremo določiti svoje širine in višine.</p>
+		<p>Inline Block elementi so mešanica obeh. Ne zavzamejo svoje poune širine okvira vendar jim lahko še vedno pripišemo širino in višino.</p>
+		<p>To uravnavamo z Css vrednostjo Display [block, inline, inline-block]</p>
+		<br>
+		<p><b>Floating oz. "plavanje"</b></p>
+		<p>Floats so eni najbolj pogostih metod za oblikovanje spletne strani z Css-om. Da bi razumeli metodologijo flotanja se lahko obrnemo na tiskanje. Tam uporabljajo tako tehniko pri printanju vsebin na časopise. Tehnika plavanja deluje tako da določimo en glaven element, ter naročimo ostalim "kam" naj se umaknejo oziroma "priplavajo" na vrh (levo ali densno). Dostikrat se zgodi da se nam preostali elementi porušijo z glavnim (tistim ki smo mu dali vrednost float). To lahko popravimo z tehniko imenovano Float-Clearfix</p>
+		<p><a href="http://css-tricks.com/all-about-floats/">Vse o Float tehniki</a></p>
+
+	</div class="vsebina-Css">		
+</div class="content">	
+<footer><p>Osnove informatike | Vid Pajek Arambašić| FDV 2014/2015</p>		
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Osnove informatike: HTML&CSS</title>
+		<meta name="description" content="Osnove informatike: osnoce CSS in HTML" />
+		<meta name="keywords" content="HTML, Html, CSS, Css, Osnove, Programiranje, FDV, Osnove informatike" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/mockup4.css" />
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="demo-4">
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://mrvar.fdv.uni-lj.si"><span>Osnovna stran</span></a>
+			</div>
+			<div id="wrap" class="wrap">
+				<div class="mockup">
+					<img class="mockup__img" src="img/mockup4.jpg" />
+					<div class="mobile">
+						<ul id="slideshow-1" class="slideshow">
+							<li class="slideshow__item"><img src="img/small/1.png"/></li>
+							<li class="slideshow__item"><img src="img/small/2.png"/></li>
+							<li class="slideshow__item"><img src="img/small/3.png"/></li>
+							<li class="slideshow__item"><img src="img/small/4.png"/></li>
+						</ul>
+					</div>
+					<div class="screen">
+						<ul id="slideshow-2" class="slideshow">
+							<li class="slideshow__item current"><img src="img/large/1.png"/></li>
+							<li class="slideshow__item"><img src="img/large/2.png"/></li>
+							<li class="slideshow__item"><img src="img/large/3.png"/></li>
+							<li class="slideshow__item"><img src="img/large/4.png"/></li>
+						</ul>
+					</div>
+					<header class="codrops-header">
+						<h1>Osnove informatike <br>
+						HTML&CSS</h1>
+						<p>Html&CSS</p>
+					</header>
+				</div>
+			</div>
+			
+			<div class="navigacija">
+				<nav class="codrops-demos">
+					<a href="html-snov.html">Osnove HTML</a>
+					<a href="css-snov.html">Osnove CSS</a>
+										
+				</nav>
+
+			</div>
+			<div class="html_content">
+			<h2>Pogosta Vprašanja</h2>
+			<ul>
+				<li>Zakaj se to učim?</li>
+				<p>Kratek odgovor: Ker je to uporabno. <br>Dolg odgovor: Kot del osnovnega znanja informatike je znanje osnov HTML in CSS nepogrešljiv. Te osnove vam omogočajo postavitev osnovne spletne strani za bodoče potrebe. Ta snov te ne bo naučila vsega o teh spletnih tehnologijah, ampak le osnove ter osnove koncepte ki ti bodo služile kot odskočna deska za nadaljni študi teh tehnologij.</p>
+				<li>Kako lahko pišem HTML in CSS</li>
+				<p>Kodo lahko pišeš v vseh osnovnih tekstovnih urejevalnikih kot so textpad, notepad++ in podobno. Obstajajo pa tudi bolj napredni urejevalniki besedil, ki omogočajo veliko uporabnih bljižnic, okrajšav ter barvne sintakse, ki močno olajšajo delo primer takega je Sublime Text.</p>
+				<li>NEDELA NEDELA NEDELAAAA!</li>
+				<p>Brez panike HTML sintaksa izgleda na prvi pogled zelo kompleksno vendar z malo vaje postane zelo pregledna in nazorna. Največ napak se pojavi prav pri pisanju različnih selektorjev ter elementov, saj tako HTML in CSS zahtevata korektno sintaksto.</p>
+				<ul><h3>Nekaj pomoči pri pri reševanju napak:</h3>
+					<li>Preveri sintakso, si pravilno napisal odpiralne in zapiralne značke?</li>
+					<li>Pri povezanih značkah kot so img, link, a preveri ali je pot do naslovljenega elementa pravila in ali je celotna (s tem mislim končnico danega dokumenta )</li>
+					<li>CSS probleme se najlažje rešuje z preverjanjem delovanja posameznih selektorjev. To storiš najlažje tako da dodaš prvilo za spremembo barve kot so color in background-color </li>
+					<li>Pri samih pravilih CSS poglej sintakso, nato pa poglej pravilo (ali obstaja ter kakšne lastnosti sprejme). Če ti ne gre je priporočljivo ustvariti posebno tatoteko HTML in CSS kjer lahko preizkušaš delovanje posameznih pravil in selektorjev.</li>
+					<li>Lahko si tudi pomagas z pregledovalnikom HTML in CSS v posameznih brskalnikih.</li>
+					<li>Kot vedno je najboljša in najhitrejša rešitev pri reševanju problemov Google. Z pravilnio uporabo besed lahko dokaj hitro najdes pravilno sintakso ter tako rešiš svojo napako.</li>
+					<li>Kateri spletni brskalnik uporabljaš, starejši še ne podpirajo nekatira novejša CSS pravila pri tem je Google tvoj najboljši prijatel.</li>
+					<li>Če vsi našteti nasveti ne obrodijo sadov me lahko vedno kontaktiraš, Če imaš srečo ti lahko celo mogoče pomagam.</li>
+				</ul>
+			</ul>					 
+						
+			</div>
+			<footer>
+				<p>Osnove informatike | Vid Pajek Arambašić| FDV 2014/2015</p>
+			</footer>
+			
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			(function() {
+				new Slideshow( document.getElementById( 'slideshow-1' ) );
+				setTimeout( function() {
+					new Slideshow( document.getElementById( 'slideshow-2' ) );
+				}, 1750 );
+
+				/* Mockup responsiveness */
+				var body = docElem = window.document.documentElement,
+					wrap = document.getElementById( 'wrap' ),
+					mockup = wrap.querySelector( '.mockup' ),
+					mockupWidth = mockup.offsetWidth;
+
+				scaleMockup();
+
+				function scaleMockup() {
+					var wrapWidth = wrap.offsetWidth,
+						val = wrapWidth / mockupWidth;
+
+					mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+				}
+				
+				window.addEventListener( 'resize', resizeHandler );
+
+				function resizeHandler() {
+					function delayed() {
+						resize();
+						resizeTimeout = null;
+					}
+					if ( typeof resizeTimeout != 'undefined' ) {
+						clearTimeout( resizeTimeout );
+					}
+					resizeTimeout = setTimeout( delayed, 50 );
+				}
+
+				function resize() {
+					scaleMockup();
+				}
+			})();
+		</script>
+	</body>
+</html>
